@@ -1,0 +1,111 @@
+html
+{
+    margin: 20px;
+}
+body
+{
+    background-color: #123;
+    color: #eee;
+    font-family: Monaco, "Lucida Console";
+    font-size: 10px;
+}
+
+a,
+a:visited
+{
+    color: #69c;
+}
+
+a:hover
+{
+    color: #9cf;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+#drop_zone
+{
+    border: 1px dashed #999;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#drop_result
+{
+    display: block;
+}
+
+#load_result
+{
+    display: block;
+    color: #ffec00;
+    margin-bottom: 20px;
+}
+
+#chart_container
+{
+    margin: auto;
+}
+
+#chart
+{
+    text-align: left;
+}
+
+#search th
+{
+    text-align: right;
+}
+
+#search_count
+{
+    color: #ffec00;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+table
+{
+    table-layout: fixed;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+thead th
+{
+    cursor: s-resize;
+}
+
+th
+{
+    text-align: left;
+}
+
+tfoot
+{
+    display: none;
+}
+
+#log_list td.qs
+{
+    overflow: hidden;
+}
+
+pre
+{
+    white-space: normal;
+    color: #9cf;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+p.credits
+{
+    text-align: center;
+    color: #999;
+}
