@@ -77,6 +77,11 @@ function processLog (logtext)
         
         d = new Date(date_string * 1000);
         
+        var year = d.getFullYear();
+        
+        var month = (d.getUTCMonth() + 1) + "";
+        if (month.length == 1) month = "0" + month;
+        
         var day = d.getDate().toString();
         if (day.length == 1) day = "0" + day;
         
@@ -88,7 +93,7 @@ function processLog (logtext)
         var mins = d.getMinutes().toString();
         if (mins.length == 1) mins = "0" + mins;
         
-        date_string = (d.getUTCMonth() + 1) + "/" + day + " " + hours + ":" + mins;
+        date_string = year + "/" + month + "/" + day + " " + hours + ":" + mins;
         
         logdata[i].dateObj = d; // date
         logdata[i].date = date_string;
